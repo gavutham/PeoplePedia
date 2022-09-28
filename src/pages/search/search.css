@@ -1,0 +1,9 @@
+.search{
+    display: flex;
+}
+
+.searchWrapper{
+    flex: 10;
+    padding: 10px 30px;
+
+}

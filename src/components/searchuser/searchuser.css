@@ -1,0 +1,35 @@
+.searchuser{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.searchuser:hover{
+    background-color: rgb(245, 243, 243);
+    border-radius: 5px;
+}
+
+.searchuserRight{
+    margin-right: 15px;
+}
+
+.searchuserImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.searchuserDesc{
+    font-weight: 300;
+}
+
+.searchuserDesc{
+    margin-top: 5px;
+}
+
+.searchuserLeft{
+    padding: 5px 0;
+}

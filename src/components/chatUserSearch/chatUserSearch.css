@@ -1,0 +1,20 @@
+.chatUserSearch{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.chatUserSearch:hover{
+    background-color: rgb(245, 243, 243);
+    border-radius: 5px;
+}
+
+.chatUserSearchImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}

@@ -1,0 +1,134 @@
+.edit {
+  display: flex;
+}
+.EditWrapper {
+  flex: 9;
+}
+
+.ImgContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ProfileImgContainer, .CoverImgContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+}
+
+.Cover {
+  height: 150px;
+  width: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.UploadImg{
+    width: 100px;
+    align-self: center;
+    padding: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1872f2;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoContainer{
+    display: flex;
+    padding-top: 40px;
+}
+
+.InfoLeft{
+    flex: 1;
+}
+
+.InfoRight{
+    flex: 1;
+}
+
+.InfoItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.InfoTitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.InfoValue{
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+}
+
+.InfoValue:focus{
+    outline: none;
+}
+
+.RelationInfo{
+    width: 130px;
+}
+
+.RelationInfo:focus{
+    outline: none;
+    border: none;
+}
+
+.saveSection{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 170px;
+}
+
+.saveButton{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #1872f2;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.uploading{
+    opacity: 0.5;
+    cursor:no-drop;
+}
+
+@media only screen and (max-width: 480px){
+    .ImgContainer{
+        flex-direction: column;
+    }
+    .InfoContainer{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+}
