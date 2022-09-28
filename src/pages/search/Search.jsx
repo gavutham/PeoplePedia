@@ -17,7 +17,7 @@ const Search = () => {
         const users = res.data;
         var searchResult = []
         users.forEach(user => {
-            if (user.username.replace(/\s/g, '').toLowerCase().includes(username.replace(/\s/g, ''))){
+            if (user.username.replace(/\s/g, '').toLowerCase().includes(username.replace(/\s/g, '').toLowerCase())){
                 searchResult.push(user);
             }
         })

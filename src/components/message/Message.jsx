@@ -8,7 +8,7 @@ const Message = ({message, own, oppo}) => {
   return (
     <div className={own ? "message own" : "message"}>
         <div className="messageTop">
-            <img src={own ? user.profilePicture: (oppo.profilePicture ? oppo.profilePicture: PF+"nouser.png")} alt="" className="messageImg" />
+            <img src={own ? (user.profilePicture ? user.profilePicture : PF+"nouser.png"): (oppo.profilePicture ? oppo.profilePicture: PF+"nouser.png")} alt="" className="messageImg" />
             <p className="messageText">{message.text}</p>
         </div>
         <div className="messageBottom">
