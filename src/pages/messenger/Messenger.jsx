@@ -100,7 +100,7 @@ const Messenger = () => {
     } catch (err) {
       console.log(err);
     }
-    setNewMessage("");
+    document.getElementById("messageboxtextarea").value = ""
     const receiverId = currentChat.members.find((id) => id !== user._id);
     socket.current.emit("sendMessage", {
       senderId: user._id,
@@ -219,6 +219,7 @@ const Messenger = () => {
                   <textarea
                     placeholder="write someting"
                     className="chatMessageInput"
+                    id="messageboxtextarea"
                     onChange={(e) => {
                       setNewMessage(e.target.value);
                     }}
