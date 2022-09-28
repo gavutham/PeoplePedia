@@ -24,7 +24,7 @@ const Messenger = () => {
   const [currentConvoOppoUser, setCurrentConvoOppoUser] = useState({});
 
   useEffect(() => {
-    socket.current = io("localhost:2000");
+    socket.current = io("peoplepediaapi.herokuapp.com");
     socket.current?.on("getMessage", (data) => {
       setArrivalMessage({
         sender: data.senderId,
